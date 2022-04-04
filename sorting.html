@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sorting of an array</title>
+  </head>
+  <body>
+    <script>
+      var arr = [5, 7, 1, 2, 4, 8];
+      var result = [];
+      var i;
+      for (i = 0; i < arr.length; i++) {
+        arr.sort(function (a, b) {
+          return b - a;
+        });
+        result += arr[i]+"";
+      }
+      console.log(result);
+    </script>
+  </body>
+</html>
